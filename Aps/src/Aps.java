@@ -11,6 +11,12 @@ public static void main(String[] arg){
     Vector<String> Jogador = new Vector<String>();
     //Segundo Vector para armazena a altura do jogadores//
     Vector<Double> Altura = new Vector<Double>(); 
+   
+    
+    
+    
+    
+   
     
     System.out.println("Gustavo ra:"+ "Silas ra:"+ "Murilo ra:"+"Lucas Ra:"+"Yuri ra:");
     
@@ -73,7 +79,27 @@ public static void main(String[] arg){
                 System.out.println(mim2);
             }
            
-    
+        case 5:
+            
+            int middle = Altura.size()/2;
+            double Mvalue = Altura.get(middle);
+            
+            for(int pp=0; pp<Altura.size();pp++){
+            
+                if(pp == middle){
+                    int mim3 = middle - 1;
+                    System.out.println(mim3);
+                   System.out.println(Altura.get(middle)+","+Altura.get(mim3));
+                    double mim4 =Altura.get(middle)-Altura.get(mim3);
+                    double mim5 = (mim4 /2) +Altura.get(mim3);
+                    System.out.println(mim5);
+            }
+            }
+            
+            
+            
+            
+            
     }
     
        
